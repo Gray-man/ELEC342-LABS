@@ -27,7 +27,7 @@ y4 = Sys1(x1_shifted);
 subplot(2,2,3); stem(y3_shifted); 
 xlabel('n'); ylabel('y3[n - 1]'); title("Time-shifted output signal y3[n - 1]");
 subplot(2,2,4); stem(y4); 
-xlabel('n'); ylabel('y4[n] = Sys1(x1[n - 1])'); title("Time-shifted input signal y4[n] = Sys1(x1[n - 1])");
+xlabel('n'); ylabel('y4[n] = Sys1(x1[n - 1])'); title("Time-shifted input signal");
 
 if (y3_shifted == y4)
     disp("Sys1 is time invariant");
