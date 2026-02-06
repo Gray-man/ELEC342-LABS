@@ -32,7 +32,7 @@ subplot(4, 2, 8); stem(n, y4);
 %Q2b
 %i
 
-%n = [0:1];
+n = [0:10];
 
 y1 = x1 .^2;
 y2 = x2 .^2;
@@ -66,5 +66,8 @@ else
 end;
 
 figure(2);
-%subplot(1,1,1); stem(n, impulse);
+subplot(1,1,1); stem(n, impulse);
 waitfor(gcf);
+
+
+% TIME INVARIANCE
