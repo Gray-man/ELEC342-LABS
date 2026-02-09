@@ -26,10 +26,8 @@ end;
 disp("Energy of y[n] is: ");
 disp(y_sum);
 
-subplot(3, 1, 1);
-stem(n, x);
-subplot(3, 1, 2);
-stem(n, y);
+subplot(3, 1, 1); stem(n, x); xlabel('n'); ylabel('x[n]'); title('x[n] = n');
+subplot(3, 1, 2); stem(n, y); xlabel('n'); ylabel('y[n]'); title('y[n] = x[n]^2');
 
 %Q1b
 
@@ -40,7 +38,6 @@ end;
 disp("Energy of sin((2pi/10)*n) is: ");
 disp(z_sum);
 
-subplot(3, 1, 3);
-stem(n, z);
+subplot(3, 1, 3); stem(n, z); xlabel('n'); ylabel('z[n]'); title('z[n] = sin((2pi/10)*n)');
 
 waitfor(gcf);

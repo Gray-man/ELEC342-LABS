@@ -8,10 +8,10 @@ x_even = 1/2 * (x_pos + x_neg);
 x_odd = 1/2 * (x_pos - x_neg);
 
 figure(1);
-subplot(2,2,1); stem(n, x_pos);
-subplot(2,2,2); stem(-n, x_neg);
-subplot(2,2,3); stem(n, x_even);
-subplot(2,2,4); stem(n, x_odd);
+subplot(2,2,1); stem(n, x_pos); xlabel('n'); ylabel('x[n]'); title('x[n] = exp(-2 * abs(n)) .* sin((pi/18)*n)'); 
+subplot(2,2,2); stem(-n, x_neg); xlabel('n'); ylabel('x[-n]'); title('x[-n] = exp(-2 * abs(-n)) .* sin((pi/18)* -n)'); 
+subplot(2,2,3); stem(n, x_even); xlabel('n'); ylabel('x[n] even'); title('Even component of x[n]: x even = 1/2 * (x[n] + x[-n])'); 
+subplot(2,2,4); stem(n, x_odd); xlabel('n'); ylabel('x[n] odd'); title('Odd component of x[n]: x odd = 1/2 * (x[n] - x[-n])');
 
 
 %(b)
@@ -25,10 +25,10 @@ y_even = 1/2 * (y_pos + y_neg);
 y_odd = 1/2 * (y_pos - y_neg);
 
 figure(2);
-subplot(2,2,1); stem(m, y_pos);
-subplot(2,2,2); stem(-m, y_neg);
-subplot(2,2,3); stem(m, y_even);
-subplot(2,2,4); stem(m, y_odd);
+subplot(2,2,1); stem(m, y_pos); xlabel('n'); ylabel('y[n]'); title('y[n] = (-1)^{m - 1}'); 
+subplot(2,2,2); stem(-m, y_neg); xlabel('n'); ylabel('y[-n]'); title('y[-n] = (-1)^{-m - 1}');
+subplot(2,2,3); stem(m, y_even); xlabel('n'); ylabel('y[n] even'); title('Even component of y[n]: y even = 1/2 * (y[n] +y[-n])');
+subplot(2,2,4); stem(m, y_odd); xlabel('n'); ylabel('y[n] odd'); title('Odd component of y[n]: y odd = 1/2 * (y[n] - y[-n])');
 
 %(c)
 % Array method comparison
