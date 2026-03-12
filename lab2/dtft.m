@@ -1,3 +1,7 @@
+%Lucas Graham
+%40249532
+%DTFT function file
+
 function X = dtft(x,n,w)
     X = zeros(1, length(w));
     

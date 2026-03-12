@@ -1,3 +1,7 @@
+%Lucas Graham
+%40249532
+%Rectangular pulse function file
+
 function vect = rectangular_pulse(a, b, n)
 
     N = numel(n);
